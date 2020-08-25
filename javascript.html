@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>
+            STRUCTURE PAGE
+        </title>
+        <meta charset = "UTF-8">
+        <meta name  = "viewprot" content = "width = device-width,initial scale = 1.0">
+        <script>
+            function daynight(b){
+                var gif;
+                if( b == 1){
+                    document.getElementById('gifs').src = 'mrng.gif';
+                }
+                else{
+                    document.getElementById('gifs').src = "night.gif";
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <h1>We link javascript here!!</h1>
+        <img id  = "gifs" src = "mrng.gif" alt = "morning" title = "morning" style = "width:200px;">
+        <p><button onclick = "daynight(1)">Morning</button>
+        <button onclick = "daynight(0)">Night</button>
+    </p>
+    </body>
+    </html>
