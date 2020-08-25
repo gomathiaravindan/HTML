@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>
+            HTML learning
+        </title>
+        <meta charset = "UTF-8">
+        <meta name  = "viewprot" content = "width = device-width,initial scale = 1.0">
+        <meta name = "description" content = "Here we describes head tags">
+        <meta name = "author" content = "Gomathi">
+        <meta name = "keywords" content = "HTML, CSS, JS">
+        <meta http-equiv="refresh" content = "20">
+        <script>
+            function daynight(b){
+                var gif;
+                if( b == 1){
+                    document.getElementById('gifs').src = 'mrng.gif';
+                }
+                else{
+                    document.getElementById('gifs').src = "night.gif";
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <h1>We link javascript here!!</h1>
+        <img id  = "gifs" src = "mrng.gif" alt = "morning" title = "morning" style = "width:200px;">
+        <p><button onclick = "daynight(1)">Morning</button>
+        <button onclick = "daynight(0)">Night</button>
+    </p>
+    </body>
+    </html>
