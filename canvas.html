@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>
+            CANVAS PAGE
+        </title>
+        <meta charset = "UTF-8">
+        <meta name  = "viewport" content = "width = device-width,initial scale = 1.0">
+    </head>
+    <body>
+        <h1>Canvas is used to draw shapes and add some colors to it!!</h1>
+        <canvas id = "canvas1" width = "300px" height = "200px" style = "border:2px solid grey;"></canvas><br>
+        <canvas id = "canvas2" width = "300px" height = "200px" style = "border:2px solid grey;"></canvas><br>
+        <canvas id = "canvas3" width = "300px" height = "200px" style = "border:2px solid grey;"></canvas<br>
+        <!--canvas id = "canvas4" width = "300px" height = "200px" style = "border:2px solid grey;"></canvas-->
+        <script>
+            var can = document.getElementById("canvas1");
+            var c = can.getContext("2d");
+            c.moveTo(2,8);
+            c.lineTo(300,400);
+            c.stroke();
+
+            var can1 = document.getElementById("canvas2");
+            var c2 = can1.getContext("2d");
+            c2.beginPath();
+            c2.arc(85, 40,30,0,2 * Math.PI);
+            c2.stroke();
+
+            var can2 = document.getElementById("canvas3");
+            var c3 = can2.getContext("2d");
+            c3.font = "40px Arial";
+            c3.strokeText("Hi canvas", 50,200);
+
+            var can2 = document.getElementById("canvas3");
+            var c4 = can2.getContext("2d");
+            var grd = c4.createLinearGradient(0,0,300,0);
+            grd.addColorStop(0,"green");
+            grd.addColorStop(1,"black");
+            c4.fillstyle = grd;
+            c4.fillRect(10,20,120,140);
+
+            
+        </script>
+    </body>
+    </html>
