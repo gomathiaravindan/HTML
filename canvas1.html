@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>
+            CANVAS PAGE
+        </title>
+        <meta charset = "UTF-8">
+        <meta name  = "viewport" content = "width = device-width,initial scale = 1.0">
+    </head>
+    <body>
+        <h1>Canvas is used to draw shapes and add some colors to it!!</h1>
+        <img src= "img1.jpg" id= "nature" alt = "img" width ="300" height="200">
+        <canvas id = "canvas1" width = "300px" height = "200px" style = "border:2px solid grey;"></canvas><br>
+        <p><button onclick = "mycanvas()">Try it</button></p>
+        <script>
+            function mycanvas(){
+                var c = document.getElementById('canvas1');
+                var c1 = c.getContext("2d");
+                var img = document.getElementById("nature");
+                c1.drawImage(img,10,10);
+            }
+        </script>
+        </body>
+        </html>
