@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>
+            HTML forms
+        </title>
+        <meta charset = "UTF-8">
+        <meta name  = "viewport" content = "width = device-width,initial scale = 1.0">
+    </head>
+    <body>
+       <h1>HTML Forms!</h1>
+       <form>
+           <fieldset>
+               <legend>Name Field</legend>
+           <label for = "firstname">Firstname:</label>
+           <input type = "text" value = "Goms" id = "fname" name = "fname">
+           <label for = "lastname">lastname:</label>
+           <input type = "text" value = "A" id = "lname" name = "lname">
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+           <input type = "radio" value = "male" name = "gender" id= "male">
+           <label for = "male">Male</label><br>
+           <input type = "radio" value = "female" name = "gender" id= "female">
+           <label for = "female">Female</label><br>
+           <input type = "radio" value = "female" name = "gender" id= "others">
+           <label for = "Others">Transgender</label><br>
+        </fieldset>
+        <fieldset>
+           <legend>Stay</legend>
+           <input type = "checkbox" name = "place" value = "Hostel" id = "hos">
+           <label for = "hostel">Hostel</label><br>
+           <input type = "checkbox" name = "place" value = "Dayscholar" id = "dsch">
+           <label for = "daysch">Dayscholar</label><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Branch</legend>
+           <label for  = "department">Select the Department:</label>
+           <select id  = "depart" name = "department">
+               <option value = "IT">IT</option>
+               <option value = "CSE">CSE</option>
+               <option value = "MECH">MECHANICAL</option>
+               <option value = "CIVIL">CIVIL</option>
+               <option value = "EEE">EEE</option>
+               <option value = "EIE">EIE</option>
+               <option value = "ECE">ECE</option>
+               <option value = "PROD">PRODUCTION</option>
+               <option value = "IBT">IBT</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Year</legend>
+            <input list = "years">
+            <datalist name = "year" id = "years">
+                <option value = "1">1</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+                <option value = "4">4</option>
+            </datalist>
+            <label for="years">Choose a year</label>
+            <br><br>
+            <textarea name = "comments" row = "30" cols = "40"></textarea>
+            <button type = "button" onclick = "alert('Thanks for your comments!!')">Tap Me!!</button><br><br>
+           <input type = "submit" value = "Submit">
+           
+
+       </form>
+    </body>
+    </html>
